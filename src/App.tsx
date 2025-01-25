@@ -7,9 +7,9 @@ import {
 } from "./utils/types/AudioRecorder";
 import { STATUS_MESSAGES } from "./utils/messages/ApiStatus";
 
-const API_KEY = process.env.REACT_APP_API_KEY;
-const UPLOAD_URL = process.env.REACT_APP_UPLOAD_URL;
-const TRANSCRIPT_URL = process.env.REACT_APP_TRANSCRIPT_URL;
+const API_KEY = import.meta.env.VITE_API_KEY;
+const UPLOAD_URL = import.meta.env.VITE_UPLOAD_URL;
+const TRANSCRIPT_URL = import.meta.env.VITE_TRANSCRIPT_URL;
 
 function App() {
   const fileInputRef = useRef<HTMLInputElement>(null);
